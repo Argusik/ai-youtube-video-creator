@@ -1,0 +1,86 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/docker-outside-of-docker-compose
+{
+	"name": "Docker from Docker Compose",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "app",
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+
+	// Use this environment variable if you need to bind mount your local source code into a new container.
+	"remoteEnv": {
+		"LOCAL_WORKSPACE_FOLDER": "${localWorkspaceFolder}"
+	},
+
+	"features": {
+		"ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
+			"version": "latest",
+			"enableNonRootDocker": "true",
+			"moby": "true"
+		},
+		"ghcr.io/devcontainers/features/anaconda:1": {},
+		"ghcr.io/devcontainers/features/azure-cli:1": {},
+		"ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {},
+		"ghcr.io/dhoeric/features/aztfy:1": {},
+		"ghcr.io/stuartleeks/dev-container-features/azure-cli-persistence:0": {},
+		"ghcr.io/stuartleeks/dev-container-features/dev-tunnels:0": {},
+		"ghcr.io/jlaundry/devcontainer-features/azure-functions-core-tools:1": {},
+		"ghcr.io/jsburckhardt/devcontainer-features/codex:1": {},
+		"ghcr.io/astronomer/devcontainer-features/astro-cli:1": {},
+		"ghcr.io/eliises/devcontainer-features/devcontainers-cli:1": {},
+		"ghcr.io/wxw-matt/devcontainer-features/apt:0": {},
+		"ghcr.io/lee-orr/rusty-dev-containers/cargo-audit:0": {},
+		"ghcr.io/lee-orr/rusty-dev-containers/cargo-binstall:0": {},
+		"ghcr.io/lee-orr/rusty-dev-containers/cargo-bundle:0": {},
+		"ghcr.io/lee-orr/rusty-dev-containers/cargo-deny:0": {},
+		"ghcr.io/lee-orr/rusty-dev-containers/cargo-expand:0": {},
+		"ghcr.io/lee-orr/rusty-dev-containers/cargo-llvm-cov:0": {},
+		"ghcr.io/lee-orr/rusty-dev-containers/cargo-make:0": {},
+		"ghcr.io/lee-orr/rusty-dev-containers/cargo-mobile:0": {},
+		"ghcr.io/lee-orr/rusty-dev-containers/cargo-nextest:0": {},
+		"ghcr.io/lee-orr/rusty-dev-containers/cargo-watch:0": {},
+		"ghcr.io/azure/azure-dev/azd:0": {},
+		"ghcr.io/nordcominc/devcontainer-features/android-sdk:1": {},
+		"ghcr.io/cirolosapio/devcontainers-features/alpine-php-composer:0": {},
+		"ghcr.io/cirolosapio/devcontainers-features/alpine-php-ftp:0": {},
+		"ghcr.io/cirolosapio/devcontainers-features/alpine-php-gd:0": {},
+		"ghcr.io/cirolosapio/devcontainers-features/alpine-php-intl:0": {},
+		"ghcr.io/cirolosapio/devcontainers-features/alpine-php-ldap:0": {},
+		"ghcr.io/cirolosapio/devcontainers-features/alpine-php-sockets:0": {},
+		"ghcr.io/cirolosapio/devcontainers-features/alpine-php-xdebug:0": {},
+		"ghcr.io/cirolosapio/devcontainers-features/alpine-php-zip:0": {},
+		"ghcr.io/cirolosapio/devcontainers-features/alpine-phpstorm-libs:0": {},
+		"ghcr.io/cirolosapio/devcontainers-features/alpine-sudo:0": {},
+		"ghcr.io/audacioustux/devcontainers/argo:1": {},
+		"ghcr.io/paul-gilber/devcontainer-features/eksctl-homebrew:1": {},
+		"ghcr.io/casl0/devcontainer-features/android-sdk:1": {},
+		"ghcr.io/dlouwers/devcontainer-features/devbox:1": {},
+		"ghcr.io/kreemer/features/chrometesting:1": {},
+		"ghcr.io/bartventer/arch-devcontainer-features/azure-cli:1": {},
+		"ghcr.io/skriptfabrik/devcontainer-features/mailpit:1": {},
+		"ghcr.io/tcaky/devcontainer-features/alpine-powershell:0": {},
+		"ghcr.io/juan-ayala/devcontainer-features/aem-sdk:1": {},
+		"ghcr.io/devcontainers-extra/features/ant-sdkman:2": {},
+		"ghcr.io/devcontainers-extra/features/apt-get-packages:1": {},
+		"ghcr.io/devcontainers-extra/features/apt-packages:1": {},
+		"ghcr.io/devcontainers-extra/features/argo-cd:1": {},
+		"ghcr.io/devcontainers-extra/features/atmos:1": {},
+		"ghcr.io/devcontainers-extra/features/aws-cdk:2": {},
+		"ghcr.io/devcontainers-extra/features/devcontainers-cli:1": {},
+		"ghcr.io/bascodes/devcontainer-features/desktop:0": {},
+		"ghcr.io/bascodes/devcontainer-features/desktop-fluxbox:0": {},
+		"ghcr.io/bascodes/devcontainer-features/desktop-init:0": {},
+		"ghcr.io/bascodes/devcontainer-features/desktop-novnc:0": {},
+		"ghcr.io/bascodes/devcontainer-features/desktop-xserver:0": {},
+		"ghcr.io/braun-daniel/devcontainer-features/asciidoc:1": {},
+		"ghcr.io/muhmdraouf/devcontainers-features/alpine-apk:0": {},
+		"ghcr.io/jajera/features/amazon-q-cli:1": {}
+	}
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "docker --version",
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}

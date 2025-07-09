@@ -1,0 +1,5 @@
+{
+  "name": "AI YouTube Video Creator",
+  "description": "An AI-powered application to generate YouTube video scripts, title suggestions, and accompanying visuals for each scene.",
+  "requestFramePermissions": []
+}
