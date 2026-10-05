@@ -39,7 +39,7 @@
 		"ghcr.io/lee-orr/rusty-dev-containers/cargo-nextest:0": {},
 		"ghcr.io/lee-orr/rusty-dev-containers/cargo-watch:0": {},
 		"ghcr.io/azure/azure-dev/azd:0": {},
-		"ghcr.io/nordcominc/devcontainer-features/android-sdk:1": {},
+		"ghcr.io/nordcominc/devcontainer-features/android-sdk:2": {},
 		"ghcr.io/cirolosapio/devcontainers-features/alpine-php-composer:0": {},
 		"ghcr.io/cirolosapio/devcontainers-features/alpine-php-ftp:0": {},
 		"ghcr.io/cirolosapio/devcontainers-features/alpine-php-gd:0": {},
